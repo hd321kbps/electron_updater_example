@@ -1,6 +1,6 @@
 {
   "name": "electron_updater_example",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Electron example",
   "main": "main.js",
   "scripts": {

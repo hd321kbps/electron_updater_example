@@ -1,5 +1,5 @@
 ﻿const { autoUpdater } = require('electron-updater');
-// const { dialog } = require('electron');
+const { dialog } = require('electron');
 
 const checkForUpdates = () => {
   // console.log('Checking for updates');
