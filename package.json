@@ -1,0 +1,21 @@
+{
+  "name": "electron_updater_example",
+  "version": "1.0.0",
+  "description": "Electron example",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build -w"
+  },
+  "keywords": [
+    "electron",
+    "example",
+    "updater"
+  ],
+  "author": "hd321kbps",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.2.0",
+    "electron-builder": "^23.6.0"
+  }
+}
