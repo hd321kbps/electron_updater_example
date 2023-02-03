@@ -1,6 +1,8 @@
 ﻿const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
+const { checkForUpdates } = require('./updater');
+
 function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 800,
@@ -22,6 +24,10 @@ app.whenReady().then(() => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
   });
 });
+
+setTimeout(() => {
+  checkForUpdates();
+}, 2_000);
 
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') app.quit();
